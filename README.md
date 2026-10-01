@@ -1,4 +1,4 @@
-# 택틱스 오우거 CV2 한글 패치 — 베타 1
+# 택틱스 오우거 CV2 한글 패치 — 베타 2
 
 슈퍼 패미컴 「タクティクスオウガ」(Tactics Ogre, 1995)의 개조판 **「タクティクスオウガ：クロニクル ヴァレリア 2」(Chronicle Valeria 2, CV2) v1.66** 한국어 번역 패치입니다.
 **원판(v1.2) 롬에 이 패치 하나만 적용하면 CV2 v1.66 과 한국어 번역이 함께 들어갑니다.**
@@ -13,7 +13,7 @@
 
 ## 내려받기
 
-[Releases](https://github.com/beck4679-alt/TacticsOgreCV2-KR/releases) 에서 `TacticsOgreCV2_KR_beta1.zip` (패치 + 이 설명 + 글꼴 라이선스)
+[Releases](https://github.com/beck4679-alt/TacticsOgreCV2-KR/releases) 에서 `TacticsOgreCV2_KR_beta2.zip` (패치 + 이 설명 + 글꼴 라이선스)
 
 ## 필요한 원본 (원판 v1.2)
 
@@ -30,23 +30,23 @@
 
 ## 적용 방법
 
-패치 파일 `TacticsOgreCV2_KR_beta1.xdelta`의 형식은 xdelta(VCDIFF)입니다.
+패치 파일 `TacticsOgreCV2_KR_beta2.xdelta`의 형식은 xdelta(VCDIFF)입니다.
 
 - 웹: [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) 에서 원본 롬과 패치를 고르고 적용
 - Windows: xdelta UI · Delta Patcher 에서 원본 롬과 패치를 고르고 적용
-- 명령줄: `xdelta3 -d -s 원본.sfc TacticsOgreCV2_KR_beta1.xdelta 택틱스오우거CV2_한글.sfc`
+- 명령줄: `xdelta3 -d -s 원본.sfc TacticsOgreCV2_KR_beta2.xdelta 택틱스오우거CV2_한글.sfc`
 
 적용 결과 (CV2 와 같은 4MB):
 
 | 항목 | 값 |
 |---|---|
 | 크기 | 4,194,304바이트 (4MB) |
-| CRC32 | `6ADA8804` |
-| SHA-256 | `4f1874fe54b050e1b77088cd9e471bc5a7c6d7fadfaeca9b6c8a1ebb9263f725` |
+| CRC32 | `ACA15811` |
+| SHA-256 | `96930b5163659e98f25a1ee300d7348c04d55c9f5764c160e6673c2f2e8f950c` |
 
 원본이 다르면(헤더가 붙은 롬, 다른 판, CV2 를 먼저 적용한 롬) 패치 안의 결과 체크섬이 맞지 않아 적용 도구가 멈춥니다.
 
-패치 파일: 1,752,089바이트, SHA-256 `54011a6f1193a34df6437926fda97a3e949094a788bf6a39f861eec71515968a`
+패치 파일: 1,752,106바이트, SHA-256 `9c42a3af7cca89d857ff05d35687a3d6e0bd1e06a3e37be7e598f32044316e54`
 
 ## CV2 에 대해
 
@@ -92,4 +92,5 @@
 
 ## 변경 기록
 
+- 베타 2 (2026-10-01): 타이틀의 튜토리얼 모드에서 워렌의 대사가 줄이 바뀔 때마다 앞 줄 위에 겹쳐 깨지던 문제를 고침([#1](https://github.com/beck4679-alt/TacticsOgreCV2-KR/issues/1)). 번역은 베타 1 과 같음
 - 베타 1 (2026-09-30): 첫 공개
