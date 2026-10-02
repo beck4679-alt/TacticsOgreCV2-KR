@@ -1,4 +1,4 @@
-# 택틱스 오우거 CV2 한글 패치 — 베타 3
+# 택틱스 오우거 CV2 한글 패치 — 베타 4
 
 슈퍼 패미컴 「タクティクスオウガ」(Tactics Ogre, 1995)의 개조판 **「タクティクスオウガ：クロニクル ヴァレリア 2」(Chronicle Valeria 2, CV2) v1.66** 한국어 번역 패치입니다.
 **원판(v1.2) 롬에 이 패치 하나만 적용하면 CV2 v1.66 과 한국어 번역이 함께 들어갑니다.**
@@ -13,7 +13,7 @@
 
 ## 내려받기
 
-[Releases](https://github.com/beck4679-alt/TacticsOgreCV2-KR/releases) 에서 `TacticsOgreCV2_KR_beta3.zip` (패치 + 이 설명 + 글꼴 라이선스)
+[Releases](https://github.com/beck4679-alt/TacticsOgreCV2-KR/releases) 에서 `TacticsOgreCV2_KR_beta4.zip` (패치 + 이 설명 + 글꼴 라이선스)
 
 ## 필요한 원본 (원판 v1.2)
 
@@ -30,23 +30,23 @@
 
 ## 적용 방법
 
-패치 파일 `TacticsOgreCV2_KR_beta3.xdelta`의 형식은 xdelta(VCDIFF)입니다.
+패치 파일 `TacticsOgreCV2_KR_beta4.xdelta`의 형식은 xdelta(VCDIFF)입니다.
 
 - 웹: [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) 에서 원본 롬과 패치를 고르고 적용
 - Windows: xdelta UI · Delta Patcher 에서 원본 롬과 패치를 고르고 적용
-- 명령줄: `xdelta3 -d -s 원본.sfc TacticsOgreCV2_KR_beta3.xdelta 택틱스오우거CV2_한글.sfc`
+- 명령줄: `xdelta3 -d -s 원본.sfc TacticsOgreCV2_KR_beta4.xdelta 택틱스오우거CV2_한글.sfc`
 
 적용 결과 (CV2 와 같은 4MB):
 
 | 항목 | 값 |
 |---|---|
 | 크기 | 4,194,304바이트 (4MB) |
-| CRC32 | `5FB8CD65` |
-| SHA-256 | `8bcdd496c11a5ad00e97524b3352b3bb642d4cb687ebe5447c39af4b7306d450` |
+| CRC32 | `2F184849` |
+| SHA-256 | `b90322b5da813a8f03b5332a12ecdcb2bacefdb78e6eeec74936bdbfc394210b` |
 
 원본이 다르면(헤더가 붙은 롬, 다른 판, CV2 를 먼저 적용한 롬) 패치 안의 결과 체크섬이 맞지 않아 적용 도구가 멈춥니다.
 
-패치 파일: 1,752,164바이트, SHA-256 `425d7a21d099c3b6bf33f687106ea64178088faa8651d67c1f78b2fddba0e947`
+패치 파일: 1,752,217바이트, SHA-256 `7f7a64ab97e43164d1c3616483fa4edd86926c1eefafd27ed9c8266927cf16d8`
 
 ## CV2 에 대해
 
@@ -92,6 +92,7 @@
 
 ## 변경 기록
 
+- 베타 4 (2026-10-02): 전투 중 카드 이름 같은 일부 패널에서 띄어쓰기 자리에 「ヴ」가 찍히던 문제([#4](https://github.com/beck4679-alt/TacticsOgreCV2-KR/issues/4)), 타이틀에서 가만히 두면 나오는 데모 화면의 글자 깨짐(이야기 설명 자막 전체, 클래스 소개의 이름 — [#5](https://github.com/beck4679-alt/TacticsOgreCV2-KR/issues/5))을 고침. 번역은 베타 1 과 같음
 - 베타 3 (2026-10-02): 상점 「동지 모집」 목록에서 클래스 이름 일부 글자(솔저의 「솔」 등)가 엉뚱한 모양으로 찍히던 문제를 고침([#3](https://github.com/beck4679-alt/TacticsOgreCV2-KR/issues/3)). 번역은 베타 1 과 같음
 - 베타 2 (2026-10-01): 타이틀의 튜토리얼 모드에서 워렌의 대사가 줄이 바뀔 때마다 앞 줄 위에 겹쳐 깨지던 문제를 고침([#1](https://github.com/beck4679-alt/TacticsOgreCV2-KR/issues/1)). 번역은 베타 1 과 같음
 - 베타 1 (2026-09-30): 첫 공개
